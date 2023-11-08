@@ -14,14 +14,15 @@
 
   const logsStyles = window.document.createElement('style');
   logsStyles.innerText = `
-    #logs-render.${prefixedClass('closed')} {
-      display: none;
+    #logs-render.${prefixedClass('open')} {
+      display: block;
     }
 
     #logs-render {
-      display: block;
+      display: none;
+      z-index: 999999999;
       position: fixed;
-      inset: 10%;
+      inset: 5%;
       background: #ffffff;
       border: 1px solid #000000;
       overflow: auto;
@@ -82,7 +83,7 @@
   logsButton.onclick = (event) => {
     event.preventDefault();
     event.stopPropagation();
-    logsContainer.classList.toggle(prefixedClass('closed'));
+    logsContainer.classList.toggle(prefixedClass('open'));
   };
   window.document.body.appendChild(logsButton);
 
