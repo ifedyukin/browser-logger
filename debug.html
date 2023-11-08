@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logger Debug</title>
+</head>
+
+<body>
+  <h1>Testing...</h1>
+
+  <script src="./lib.js"></script>
+  <script>
+    console.log('test');
+    console.debug('test');
+    console.error('test');
+    console.info('test');
+    console.warn('test');
+
+    console.log(NaN);
+    console.log(Infinity);
+    console.log(1);
+    console.log('1');
+    console.log(null);
+    console.log(undefined);
+    console.log(Symbol('test'));
+    console.log(Symbol());
+    console.log([1, 2, 3]);
+    console.log([1, 2, 3, [1, 2, 3, [1, 2, 3, [1, 2, 3]]]]);
+    console.log(() => alert('test'));
+    console.log({ a: 1, b: 2, c: () => alert('test') });
+    console.log({ a: { a: 1, b: 2, c: () => alert('test'), d: { a: 1, b: 2, c: () => alert('test'), e: { a: 1, b: 2, c: () => alert('test') } } } });
+    console.log(true);
+    console.log(BigInt('123123123123123123123'));
+  </script>
+</body>
+
+</html>
