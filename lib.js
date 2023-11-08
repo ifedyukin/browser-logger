@@ -54,6 +54,8 @@
       color: #000000;
       border: 1px solid #000000;
       cursor: pointer;
+      height: 40px;
+      width: 65px;
     }
 
     #logs-render .${prefixedClass('log')} { background: #ffffff; }
